@@ -64,7 +64,7 @@ public class Helper {
     public Connection getDBConnection() throws ClassNotFoundException,
             SQLException{
         String username = "root";
-        String password = "marame123";
+        String password = ""; // Here put your password for your database if any
         String url = "jdbc:mysql://localhost:3306/web_class?useSSL=false";
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection(url, username, password);
